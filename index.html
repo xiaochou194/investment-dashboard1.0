@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>全球投资指挥中心</title>
+    <meta name="description" content="Global Investment Command Center" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              marketRed: '#e74c3c', // Chinese Rise
+              marketGreen: '#2ecc71', // Chinese Fall (wait, usually Green is fall in China? Actually Red is Rise, Green is Fall in China. In US, Green is Rise, Red is Fall. User requested Chinese convention: Red=Rise, Green=Fall.)
+              darkBg: '#0f172a',
+              cardBg: '#1e293b',
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            }
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #0f172a;
+        color: #e2e8f0;
+      }
+      /* Custom scrollbar for news ticker */
+      .news-scroll::-webkit-scrollbar {
+        width: 6px;
+      }
+      .news-scroll::-webkit-scrollbar-track {
+        background: #1e293b; 
+      }
+      .news-scroll::-webkit-scrollbar-thumb {
+        background: #475569; 
+        border-radius: 3px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

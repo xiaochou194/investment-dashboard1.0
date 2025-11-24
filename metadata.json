@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Global Investment Command Center",
+  "description": "A real-time financial dashboard for Chinese investors tracking A-Shares, US Risk, Commodities, Crypto, and Forex. Features market indicators, news ticker, and economic calendar powered by Gemini.",
+  "requestFramePermissions": []
+}
